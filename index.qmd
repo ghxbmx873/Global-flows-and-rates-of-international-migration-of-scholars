@@ -1,3 +1,25 @@
 ---
 title: "my first qmd"
 ---
+
+# Heading 1
+
+```{r}
+#| warning: false
+#| message: false
+#| results: hide
+library(tidyverse)
+```
+
+
+```{r}
+data(mtcars)
+```
+
+```{r}
+mtcars |> ggplot(aes(y = mpg, x = hp)) + geom_point()
+```
+
+
+
+
